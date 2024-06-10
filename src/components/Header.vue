@@ -19,6 +19,7 @@ import Logo from '@/components/Logo.vue'
   @include flex-container(row, space-between, center);
   width: 100%;
   padding: 32px 48px;
+  margin-bottom: 72px;
   &__nav-links {
     @include flex-container(row, center, center);
     gap: 24px;

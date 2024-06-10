@@ -1,13 +1,18 @@
 <script setup>
-import PreviewSection from '@/components/landing/PreviewSection.vue';
+import FirstSection from '@/components/landing/FirstSection.vue';
+import SecondSection from '@/components/landing/SecondSection.vue';
 </script>
 
 <template>
-<section>
-  <PreviewSection/>
-</section>
+<div class="landing">
+  <FirstSection/>
+  <SecondSection/>
+</div>
 </template>
 
-<style scoped>
-
+<style scoped lang="scss">
+.landing {
+  @include flex-container(column, center, center);
+  gap: 140px;
+}
 </style>
