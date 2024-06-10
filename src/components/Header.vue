@@ -1,5 +1,6 @@
 <script setup>
 import Logo from '@/components/Logo.vue'
+import Locale from '@/components/Locale.vue'
 </script>
 
 <template>
@@ -10,7 +11,7 @@ import Logo from '@/components/Logo.vue'
     <a href="">Galaxy Store</a>
     <a href="">App Store</a>
   </div>
-  <div>Lang</div>
+  <Locale/>
 </header>
 </template>
 

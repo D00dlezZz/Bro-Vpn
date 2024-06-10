@@ -1,5 +1,5 @@
 <script setup>
-import Logo from '@/components/Logo.vue'
+import Logo from '@/components/Logo.vue';
 </script>
 
 <template>
@@ -9,7 +9,7 @@ import Logo from '@/components/Logo.vue'
    <div class="footer-wrap__menu">
      <div class="menu-list">
        <h4>About Bro! VPN</h4>
-       <router-link to="">Privacy Policy</router-link>
+       <router-link :to="{name: 'privacy-policy'}">Privacy Policy</router-link>
      </div>
      <div class="menu-list">
        <h4>For mobile</h4>
