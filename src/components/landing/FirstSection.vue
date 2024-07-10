@@ -1,6 +1,6 @@
 <script setup>
 import IconPhones from '@/components/icons/IconPhones.vue';
-import EButton from '@/components/ui/EButton.vue';
+import GooglePlayButton from '@/components/ui/GooglePlayButton.vue';
 </script>
 
 <template>
@@ -9,7 +9,7 @@ import EButton from '@/components/ui/EButton.vue';
     <h1 class="title">Bro!</h1>
     <p class="subtitle">Fast. Safe. Yours.</p>
     <p class="by-text">by Shidotemoru</p>
-    <EButton title="Goggle Play"/>
+    <GooglePlayButton/>
   </div>
   <IconPhones/>
 </section>
