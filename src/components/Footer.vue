@@ -43,7 +43,7 @@ import Logo from '@/components/Logo.vue';
 <style scoped lang="scss">
 footer {
   width: 100%;
-  border-top: 2px solid #767680;
+  border-top: 2px solid rgb(118 118 128 / 20%);
   padding-top: 36px;
   margin-top: 120px;
   .footer-wrap {

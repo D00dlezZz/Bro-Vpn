@@ -3,7 +3,7 @@
 </script>
 
 <template>
-  <svg width="52" height="52" viewBox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <svg width="36" height="36" viewBox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg">
     <g filter="url(#filter0_d_2099_29781)">
       <g clip-path="url(#clip0_2099_29781)">
         <path d="M7 6H43V42H7V6Z" fill="#012169"/>
