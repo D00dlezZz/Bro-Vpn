@@ -1,17 +1,17 @@
 <script setup>
 import Logo from '@/components/Logo.vue'
-import Locale from '@/components/Locale.vue'
+import LangSwitcher from "@/components/ui/LangSwitcher.vue";
 </script>
 
 <template>
 <header class="header">
   <Logo/>
   <div class="header__nav-links">
-    <a href="">Google Play</a>
-    <a href="">Galaxy Store</a>
-    <a href="">App Store</a>
+    <a>Google Play</a>
+    <a>Galaxy Store</a>
+    <a>App Store</a>
   </div>
-  <Locale/>
+  <LangSwitcher/>
 </header>
 </template>
 
@@ -25,6 +25,7 @@ import Locale from '@/components/Locale.vue'
     @include flex-container(row, center, center);
     gap: 24px;
     a {
+      cursor: pointer;
       text-decoration: none;
       color: var(--primary);
       @include text-property(26px, 32px, 600);
