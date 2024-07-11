@@ -1,3 +1,5 @@
+import 'node_modules/vue/dist/vue.global.js';
+
 import './assets/main.scss'
 
 import { createApp } from 'vue'
