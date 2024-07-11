@@ -1,65 +1,64 @@
 <script setup>
 import {ref, markRaw} from "vue";
-import InfoBlock from '@/components/ui/InfoBlock.vue'
+import InfoCard from '@/components/ui/InfoCard.vue'
+import IconMemojiGlobal from "@/components/icons/memoji/IconMemojiGlobal.vue";
+import IconMemojiInstant from "@/components/icons/memoji/IconMemojiInstant.vue";
+import IconMemojiComfortable from "@/components/icons/memoji/IconMemojiComfortable.vue";
+import IconMemojiSafe from "@/components/icons/memoji/IconMemojiSafe.vue";
+import IconMemojiNoLimit from "@/components/icons/memoji/IconMemojiNoLimit.vue";
+import IconMemojiFast from "@/components/icons/memoji/IconMemojiFast.vue";
+import IconMemojiStable from "@/components/icons/memoji/IconMemojiStable.vue";
+import IconMemojiPrivate from "@/components/icons/memoji/IconMemojiPrivate.vue";
+import IconMemojiModern from "@/components/icons/memoji/IconMemojiModern.vue";
 
 const infos = ref([
   {
     title: 'Global',
     subtitle: 'Connecting to servers in N countries around the world',
-    icon: markRaw(''),
-    background: '#FFDCB9'
+    icon: markRaw(IconMemojiGlobal),
   },
   {
     title: 'Instant',
-    subtitle: 'Easy one-click \n' +
-        'connection',
-    icon: markRaw(''),
-    background: '#AFFCA9'
+    subtitle: 'Easy one-click connection',
+    icon: markRaw(IconMemojiInstant),
   },
   {
     title: 'Comfortable',
     subtitle: 'Use it on all your devices',
-    icon: markRaw(''),
-    background: '#E0B8FF'
+    icon: markRaw(IconMemojiComfortable),
   },
   {
     title: 'Safe',
     subtitle: 'Data encryption and \n' +
         'IP address protection',
-    icon: markRaw(''),
-    background: '#FF8A8A'
+    icon: markRaw(IconMemojiSafe),
   },
   {
     title: 'Limitless',
     subtitle: 'Unlimited access to all \n' +
         'resources with a subscription',
-    icon: markRaw(''),
-    background: '#B8D7FF'
+    icon: markRaw(IconMemojiNoLimit),
   },
   {
     title: 'Fast',
     subtitle: 'Optimized servers \n' +
         'with high speed',
-    icon: markRaw(''),
-    background: '#FFF7B8'
+    icon: markRaw(IconMemojiFast),
   },
   {
     title: 'Stable',
     subtitle: 'Reliable connection without disabling VPN',
-    icon: markRaw(''),
-    background: '#BDA8F8'
+    icon: markRaw(IconMemojiStable),
   },
   {
     title: 'Private',
     subtitle: 'We do not store connection and activity data',
-    icon: markRaw(''),
-    background: '#FFDBDE'
+    icon: markRaw(IconMemojiPrivate),
   },
   {
     title: 'Modern',
     subtitle: 'Support for split tunneling of VPN traffic',
-    icon: markRaw(''),
-    background: '#FFDBDE'
+    icon: markRaw(IconMemojiModern),
   },
 ])
 </script>
@@ -68,12 +67,13 @@ const infos = ref([
 <section class="second-section">
   <h2>Why you should choose <span>Bro!</span> VPN</h2>
   <div class="infos-wrap">
-    <InfoBlock
+    <InfoCard
         v-for="(item, index) in infos"
         :key="index"
         :title="item.title"
+        :background="item.backgroundColor"
         :subtitle="item.subtitle"
-        :background="item.background"
+        :icon="item.icon"
     />
   </div>
 </section>

@@ -5,11 +5,14 @@ const props = defineProps({
   subtitle: String,
   background: String
 })
+console.log(props.icon)
 </script>
 
 <template>
 <div class="info-block">
-  <div class="info-block__icon"></div>
+  <div class="info-block__icon">
+    <component :is="icon"/>
+  </div>
   <div class="info-block__text">
     <h4>{{title}}</h4>
     <p>{{subtitle}}</p>
@@ -28,7 +31,7 @@ const props = defineProps({
     width: 200px;
     height: 200px;
     border-radius: 50%;
-    background: v-bind(background);
+    //background: v-bind(background);
   }
   &__text {
     @include flex-container(column, center, center);
