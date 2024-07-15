@@ -8,8 +8,8 @@ import LangSwitcher from "@/components/ui/LangSwitcher.vue";
   <Logo/>
   <div class="header__nav-links">
     <a>Google Play</a>
-    <a>Galaxy Store</a>
-    <a>App Store</a>
+    <a class="disabled">Galaxy Store</a>
+    <a class="disabled">App Store</a>
   </div>
   <LangSwitcher/>
 </header>
@@ -29,6 +29,10 @@ import LangSwitcher from "@/components/ui/LangSwitcher.vue";
       text-decoration: none;
       color: var(--primary);
       @include text-property(26px, 32px, 600);
+    }
+    .disabled {
+      cursor: not-allowed;
+      opacity: 0.6;
     }
   }
 }
